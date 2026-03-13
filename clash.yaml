@@ -86,6 +86,13 @@ rule-providers:
     url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/crypto.list
     interval: 86400
 
+  stocks:
+    type: http
+    behavior: classical
+    path: ./rule-providers/stocks.list
+    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/stocks.list
+    interval: 86400
+
   ads:
     type: http
     behavior: classical
@@ -132,6 +139,7 @@ rules:
   - RULE-SET,reject-custom,REJECT
   - RULE-SET,direct-custom,DIRECT
   - RULE-SET,crypto,PROXY
+  - RULE-SET,stocks,DIRECT
   - RULE-SET,ads,REJECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,china,DIRECT
