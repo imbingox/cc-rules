@@ -68,3 +68,21 @@ DOMAIN-SUFFIX,solscan.io
 
 #wallet-tools
 DOMAIN-SUFFIX,debank.com
+
+#dex
+DOMAIN-SUFFIX,hyperliquid.xyz
+DOMAIN-SUFFIX,lighter.xyz
+DOMAIN-SUFFIX,asterdex.com
+DOMAIN-SUFFIX,aster.trade
+DOMAIN-SUFFIX,uniswap.org
+DOMAIN-SUFFIX,pancakeswap.finance
+DOMAIN-SUFFIX,curve.fi
+DOMAIN-SUFFIX,balancer.fi
+DOMAIN-SUFFIX,1inch.io
+DOMAIN-SUFFIX,matcha.xyz
+DOMAIN-SUFFIX,jup.ag
+DOMAIN-SUFFIX,raydium.io
+DOMAIN-SUFFIX,drift.trade
+DOMAIN-SUFFIX,dydx.exchange
+DOMAIN-SUFFIX,dydx.trade
+DOMAIN-SUFFIX,gmx.io
