@@ -4,7 +4,6 @@ DOMAIN-SUFFIX,binance.info
 
 #bybit
 DOMAIN,bybit-exchange.github.io
-DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,monitor-frontend-collector.a.bybit-aws.com
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.biz
@@ -19,9 +18,6 @@ DOMAIN-SUFFIX,byd3c3.com
 DOMAIN-SUFFIX,bybdc6.com
 DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
 DOMAIN-SUFFIX,ffe390afd658c19dcbf707e0597b846d.de
-DOMAIN-SUFFIX,amazon.com
-DOMAIN-SUFFIX,amazonaws.com
-DOMAIN-SUFFIX,appsflyer.com
 IP-CIDR,13.32.121.6/32,no-resolve
 IP-CIDR,43.133.238.145/32,no-resolve
 IP-CIDR,13.33.187.108/32,no-resolve
