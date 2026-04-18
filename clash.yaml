@@ -32,6 +32,14 @@ proxy-groups:
       type: select,
       proxies: [🇨🇳 台湾-家宽, 🇭🇰 香港-家宽, 🇯🇵 日本-家宽, 🇸🇬 新加坡-家宽, 🇺🇸 美国-家宽, 🌐 全部节点, DIRECT],
     }
+  - {
+      name: ⚡ 555330 自动测速,
+      type: url-test,
+      include-all: true,
+      url: "https://warden.555330.xyz/",
+      tolerance: 20,
+      interval: 300,
+    }
   - { name: 🤖 AI, type: select, proxies: [🇨🇳 台湾-家宽, 🇭🇰 香港-家宽, 🇯🇵 日本-家宽, 🇸🇬 新加坡-家宽, 🇺🇸 美国-家宽, 🌐 全部节点] }
   - { name: 🪙 Crypto, type: select, proxies: [🇨🇳 台湾-家宽, 🇭🇰 香港-家宽, 🇯🇵 日本-家宽, 🇸🇬 新加坡-家宽, 🇺🇸 美国-家宽, 🌐 全部节点] }
   - { name: 🍀 Google, type: select, proxies: [🇨🇳 台湾-家宽, 🇭🇰 香港-家宽, 🇯🇵 日本-家宽, 🇸🇬 新加坡-家宽, 🇺🇸 美国-家宽, 🌐 全部节点, DIRECT] }
@@ -287,6 +295,7 @@ rule-providers:
     interval: 86400
 
 rules:
+  - DOMAIN-SUFFIX,555330.xyz,⚡ 555330 自动测速
   - RULE-SET,reject-custom,REJECT
   - RULE-SET,direct-custom,DIRECT
   - RULE-SET,crypto,🪙 Crypto
