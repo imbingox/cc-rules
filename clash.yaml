@@ -36,6 +36,7 @@ proxy-groups:
       name: ⚡ 555330 自动测速,
       type: url-test,
       include-all: true,
+      exclude-filter: "^REJECT$",
       url: "https://warden.555330.xyz/",
       tolerance: 20,
       interval: 300,
