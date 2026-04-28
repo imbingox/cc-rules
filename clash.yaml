@@ -33,11 +33,11 @@ proxy-groups:
       proxies: [🇨🇳 台湾-家宽, 🇭🇰 香港-家宽, 🇯🇵 日本-家宽, 🇸🇬 新加坡-家宽, 🇺🇸 美国-家宽, 🌐 全部节点, DIRECT],
     }
   - {
-      name: ⚡ 555330 自动测速,
+      name: ⚡ Fastest,
       type: url-test,
       include-all: true,
       exclude-filter: "^REJECT$",
-      url: "https://warden.555330.xyz/",
+      url: "https://www.gstatic.com/generate_204",
       tolerance: 20,
       interval: 300,
     }
@@ -183,6 +183,13 @@ proxy-groups:
   - { name: 🌐 全部节点, type: select, include-all: true }
 
 rule-providers:
+  fastest:
+    type: http
+    behavior: classical
+    path: ./rule-providers/fastest.list
+    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/fastest.list
+    interval: 86400
+
   reject-custom:
     type: http
     behavior: classical
@@ -296,7 +303,7 @@ rule-providers:
     interval: 86400
 
 rules:
-  - DOMAIN-SUFFIX,555330.xyz,⚡ 555330 自动测速
+  - RULE-SET,fastest,⚡ Fastest
   - RULE-SET,reject-custom,REJECT
   - RULE-SET,direct-custom,DIRECT
   - RULE-SET,crypto,🪙 Crypto
