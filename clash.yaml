@@ -188,7 +188,7 @@ rule-providers:
     behavior: classical
     format: text
     path: ./rule-providers/fastest.list
-    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/fastest.list
+    url: https://raw.githubusercontent.com/imbingox/cc-rules/main/rules/fastest.list
     interval: 86400
 
   reject-custom:
@@ -196,7 +196,7 @@ rule-providers:
     behavior: classical
     format: text
     path: ./rule-providers/reject-custom.list
-    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/reject.list
+    url: https://raw.githubusercontent.com/imbingox/cc-rules/main/rules/reject.list
     interval: 86400
 
   direct-custom:
@@ -204,7 +204,7 @@ rule-providers:
     behavior: classical
     format: text
     path: ./rule-providers/direct-custom.list
-    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/direct.list
+    url: https://raw.githubusercontent.com/imbingox/cc-rules/main/rules/direct.list
     interval: 86400
 
   crypto:
@@ -212,7 +212,7 @@ rule-providers:
     behavior: classical
     format: text
     path: ./rule-providers/crypto.list
-    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/crypto.list
+    url: https://raw.githubusercontent.com/imbingox/cc-rules/main/rules/crypto.list
     interval: 86400
 
   stocks:
@@ -220,7 +220,7 @@ rule-providers:
     behavior: classical
     format: text
     path: ./rule-providers/stocks.list
-    url: https://raw.githubusercontent.com/hi-bingo/cc-rules/main/rules/stocks.list
+    url: https://raw.githubusercontent.com/imbingox/cc-rules/main/rules/stocks.list
     interval: 86400
 
   ads:
