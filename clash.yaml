@@ -53,6 +53,7 @@ proxy-groups:
   - {
       name: 🇨🇳 台湾-家宽,
       type: fallback,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       interval: 300,
@@ -62,6 +63,7 @@ proxy-groups:
   - {
       name: 🇨🇳 台湾-流媒体,
       type: url-test,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       tolerance: 20,
@@ -72,6 +74,7 @@ proxy-groups:
   - {
       name: 🇨🇳 台湾-其他,
       type: select,
+      proxies: [DIRECT],
       include-all: true,
       filter: "(?i)(?=.*(台湾|台|taiwan|(^|[^A-Za-z])tw([^A-Za-z]|$)))^((?!(家宽|宽带|住宅|家庭|流媒体|解锁|奈飞|netflix|影音)).)*$",
       exclude-filter: "(?i)^.*-[^-]*(香港|hong kong|hongkong|日本|japan|新加坡|singapore|美国|united states|unitedstates|america)[^-]*$",
@@ -79,6 +82,7 @@ proxy-groups:
   - {
       name: 🇭🇰 香港-家宽,
       type: fallback,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       interval: 300,
@@ -88,6 +92,7 @@ proxy-groups:
   - {
       name: 🇭🇰 香港-流媒体,
       type: url-test,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       tolerance: 20,
@@ -98,6 +103,7 @@ proxy-groups:
   - {
       name: 🇭🇰 香港-其他,
       type: select,
+      proxies: [DIRECT],
       include-all: true,
       filter: "(?i)(?=.*(香港|hongkong|hong kong|(^|[^A-Za-z])hk([^A-Za-z]|$)|(^|[^A-Za-z])hkg([^A-Za-z]|$)))^((?!(家宽|宽带|住宅|家庭|流媒体|解锁|奈飞|netflix|影音)).)*$",
       exclude-filter: "(?i)^.*-[^-]*(台湾|台|taiwan|日本|japan|新加坡|singapore|美国|united states|unitedstates|america)[^-]*$",
@@ -105,6 +111,7 @@ proxy-groups:
   - {
       name: 🇯🇵 日本-家宽,
       type: fallback,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       interval: 300,
@@ -114,6 +121,7 @@ proxy-groups:
   - {
       name: 🇯🇵 日本-流媒体,
       type: url-test,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       tolerance: 20,
@@ -124,6 +132,7 @@ proxy-groups:
   - {
       name: 🇯🇵 日本-其他,
       type: select,
+      proxies: [DIRECT],
       include-all: true,
       filter: "(?i)(?=.*(日本|japan|(^|[^A-Za-z])jp([^A-Za-z]|$)))^((?!(家宽|宽带|住宅|家庭|流媒体|解锁|奈飞|netflix|影音)).)*$",
       exclude-filter: "(?i)^.*-[^-]*(台湾|台|taiwan|香港|hong kong|hongkong|新加坡|singapore|美国|united states|unitedstates|america)[^-]*$",
@@ -131,6 +140,7 @@ proxy-groups:
   - {
       name: 🇸🇬 新加坡-家宽,
       type: fallback,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       interval: 300,
@@ -140,6 +150,7 @@ proxy-groups:
   - {
       name: 🇸🇬 新加坡-流媒体,
       type: url-test,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       tolerance: 20,
@@ -150,6 +161,7 @@ proxy-groups:
   - {
       name: 🇸🇬 新加坡-其他,
       type: select,
+      proxies: [DIRECT],
       include-all: true,
       filter: "(?i)(?=.*(新加坡|singapore|(^|[^A-Za-z])sg([^A-Za-z]|$)))^((?!(家宽|宽带|住宅|家庭|流媒体|解锁|奈飞|netflix|影音)).)*$",
       exclude-filter: "(?i)^.*-[^-]*(台湾|台|taiwan|香港|hong kong|hongkong|日本|japan|美国|united states|unitedstates|america)[^-]*$",
@@ -157,6 +169,7 @@ proxy-groups:
   - {
       name: 🇺🇸 美国-家宽,
       type: fallback,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       interval: 300,
@@ -166,6 +179,7 @@ proxy-groups:
   - {
       name: 🇺🇸 美国-流媒体,
       type: url-test,
+      proxies: [DIRECT],
       include-all: true,
       url: "https://www.gstatic.com/generate_204",
       tolerance: 20,
@@ -176,6 +190,7 @@ proxy-groups:
   - {
       name: 🇺🇸 美国-其他,
       type: select,
+      proxies: [DIRECT],
       include-all: true,
       filter: "(?i)(?=.*(美国|unitedstates|united states|america|(^|[^A-Za-z])usa([^A-Za-z]|$)|(^|[^A-Za-z])us([^A-Za-z]|$)))^((?!(家宽|宽带|住宅|家庭|流媒体|解锁|奈飞|netflix|影音)).)*$",
       exclude-filter: "(?i)^.*-[^-]*(台湾|台|taiwan|香港|hong kong|hongkong|日本|japan|新加坡|singapore)[^-]*$",
